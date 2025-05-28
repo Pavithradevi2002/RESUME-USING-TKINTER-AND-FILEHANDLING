@@ -1,41 +1,41 @@
-# Tkinter Resume Builder
+# Web-Based Resume Builder
 
 ## Description
-A desktop application built with Python and Tkinter that allows users to enter their information (personal details, career objective, education, skills, projects, internships, and achievements) and generate a simple text-based resume. The application provides a user-friendly interface and includes data validation to guide the user.
+A simple web application built with HTML, CSS, and JavaScript that allows users to enter their information and generate a downloadable plain text resume. The application provides a user-friendly interface and includes client-side data validation.
 
 ## Features
-*   User-friendly graphical interface to input resume details.
+*   User-friendly web interface to input resume details.
 *   Organized sections for:
     *   Personal Information (Name, Email, Phone, LinkedIn, Place, Gender)
     *   Career Objective
-    *   Education (Degree, Year of Passing)
     *   Skills
+    *   Education (Degree, Year of Passing)
     *   Projects
-    *   Internships
+    *   Internship Details
     *   Achievements
-*   Generates a resume in `.txt` format (with an option to save as `.doc`).
-*   Allows users to choose the save location and filename for the generated resume using a file dialog.
-*   Includes comprehensive data validation for all fields with user-friendly error messages displayed for any missing or invalid entries.
-*   Built using Python's standard Tkinter library for the GUI and the `re` module for email validation.
+*   Client-side data validation with user-friendly error messages displayed directly on the page.
+*   Generates a formatted resume in `.txt` format, downloadable directly from the browser.
+*   No backend required; runs entirely in the user's web browser using HTML, CSS, and JavaScript.
 
 ## How to Run
-1.  **Ensure Python is installed:** This application requires Python 3.x. You can download it from [python.org](https://www.python.org/downloads/).
-2.  **Get the code:**
-    *   Clone the repository: `git clone <repository_url>` (If applicable, otherwise state to download file)
-    *   Alternatively, download the `resume_app.py` file directly.
-3.  **Navigate to the directory:** Open your terminal or command prompt and navigate to the directory where `resume_app.py` is located.
-4.  **Run the script:** Execute the following command:
-    ```bash
-    python resume_app.py
-    ```
+1.  **Get the code:**
+    *   Clone this repository: `git clone <repository_url>` (if applicable)
+    *   Alternatively, download the `index.html`, `style.css`, and `script.js` files.
+2.  **Open the application:**
+    *   Navigate to the directory where you saved the files.
+    *   Open the `index.html` file in any modern web browser (e.g., Chrome, Firefox, Safari, Edge).
 
-## Prerequisites/Dependencies
-*   **Python 3.x**
-*   **Tkinter:** This is included with most Python installations by default. If you are using a minimal installation, you might need to install it separately (e.g., `sudo apt-get install python3-tk` on Debian/Ubuntu).
+## Prerequisites
+*   A modern web browser that supports HTML5, CSS3, and JavaScript ES6.
+
+## Technology Stack
+*   **HTML:** For the structure and content of the web page.
+*   **CSS:** For styling the user interface.
+*   **JavaScript:** For client-side interactivity, data validation, and resume generation/download logic.
 
 ## Optional: Future Enhancements
-*   Support for more output formats like PDF or DOCX using libraries like ReportLab or python-docx.
-*   Customizable resume templates and styling options.
-*   Ability to save and load resume data for later editing.
-*   Integration with spell-checking libraries.
-*   A "preview" panel to see how the resume looks before saving.
+*   Support for more output formats like PDF (e.g., using a JavaScript library like jsPDF).
+*   More advanced styling options or resume templates.
+*   Ability to save resume data in the browser's local storage for later editing.
+*   A live preview panel to see how the resume looks as it's being filled out.
+*   Integration with cloud storage for saving/loading resumes.

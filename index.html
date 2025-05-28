@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resume Builder</h1>
+    <div id="errorMessages" style="color: red; margin-bottom: 15px;"></div>
+
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="linkedin">LinkedIn Profile URL:</label>
+                <input type="url" id="linkedin" name="linkedin">
+            </div>
+            <div>
+                <label for="place">Place:</label>
+                <input type="text" id="place" name="place">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="genderMale" name="gender" value="Male">
+                <label for="genderMale" class="radio-label">Male</label>
+                <input type="radio" id="genderFemale" name="gender" value="Female">
+                <label for="genderFemale" class="radio-label">Female</label>
+                <input type="radio" id="genderTrans" name="gender" value="Transgender">
+                <label for="genderTrans" class="radio-label">Transgender</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Professional Profile</legend>
+            <div>
+                <label for="objective">Career Objective:</label>
+                <textarea id="objective" name="objective" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education & Experience</legend>
+            <div>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree">
+            </div>
+            <div>
+                <label for="yearOfPassing">Year of Passing:</label>
+                <input type="text" id="yearOfPassing" name="yearOfPassing"> <!-- Changed to text for flexibility, can be number -->
+            </div>
+            <div>
+                <label for="projects">Projects:</label>
+                <textarea id="projects" name="projects" rows="4"></textarea>
+            </div>
+            <div>
+                <label for="internship">Internship Details:</label>
+                <textarea id="internship" name="internship" rows="4"></textarea>
+            </div>
+            <div>
+                <label for="achievements">Achievements:</label>
+                <textarea id="achievements" name="achievements" rows="4"></textarea>
+            </div>
+        </fieldset>
+
+        <div class="form-buttons">
+            <button type="submit">Generate Resume</button>
+            <button type="button" id="clearButton">Clear Form</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
